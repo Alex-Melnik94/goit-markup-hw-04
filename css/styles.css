@@ -1,0 +1,424 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --white-color: #ffffff;
+  --accent-color: #2196f3;
+  --primary-bcg-color: #2f303a;
+  --sec-bcg-color: #f5f4fa;
+  --black-color: #000000;
+  --rgba-opacity-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Шапка сайта */
+
+.header {
+  display: flex;
+
+  background-color: var(--white-color);
+  border-bottom: 1px solid #ececec;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+
+.logo,
+.logo-item {
+  color: var(--black-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.logo-item {
+  color: var(--accent-color);
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-list,
+.contacts-list {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--accent-color);
+}
+
+.nav-list .link.current {
+  color: var(--accent-color);
+}
+
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.contacts-list .link:hover,
+.contacts-list .link:focus {
+  color: var(--accent-color);
+}
+
+/* Своство Секций */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Секция Герой */
+
+.hero {
+  background-color: var(--primary-bcg-color);
+  text-align: center;
+}
+
+.hero.section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-title {
+  margin-bottom: 30px;
+
+  color: var(--white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.button {
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border-style: none;
+  outline: none;
+  cursor: pointer;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+}
+
+/* Секция с преимуществами */
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-list .item {
+  width: 270px;
+}
+
+.features-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features .list-title {
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  line-height: 1.43;
+  text-transform: uppercase;
+}
+
+.features .list-text {
+  color: var(--primary-text-color);
+
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+/* Секция с родом занятия компании */
+
+.work.section {
+  padding-top: 0;
+}
+
+.work-list {
+  display: flex;
+}
+
+.work-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* Секция с членами команды */
+
+.members {
+  background-color: var(--sec-bcg-color);
+}
+
+.members .list-title {
+  margin-bottom: 10px;
+
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.members-list {
+  display: flex;
+}
+
+.members-list .item {
+  background-color: var(--white-color);
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.members-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.members .list-text {
+  color: var(--primary-text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.members-list .members-descr {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* Футер */
+.footer {
+  background-color: var(--primary-bcg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .logo {
+  display: inline-block;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+address {
+  margin-bottom: 9px;
+
+  color: var(--white-color);
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+.footer .contacts-link {
+  color: var(--rgba-opacity-color);
+
+  font-weight: 400;
+  line-height: 1.71;
+  text-decoration: none;
+}
+
+.footer .contacts-link:hover,
+.footer .contacts-link:focus {
+  color: var(--accent-color);
+}
+
+.contacts-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter button {
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+  border-style: none;
+  outline: none;
+  cursor: pointer;
+
+  border-radius: 4px;
+
+  color: var(--title-text-color);
+  background-color: var(--sec-bcg-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+.filter button:hover,
+.filter button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  background-color: var(--white-color);
+}
+
+.item-border .title {
+  margin-bottom: 4px;
+
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.works-list .text {
+  color: var(--primary-text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.works-list a {
+  text-decoration: none;
+}
+
+.item-border {
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  padding: 20px 24px 20px 24px;
+  width: 370px;
+}
+
+.works-list .item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.works-list .item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.works-list .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.item-border .title {
+  margin: 0;
+}
