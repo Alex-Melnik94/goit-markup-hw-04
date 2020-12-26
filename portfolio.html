@@ -36,12 +36,17 @@
         </nav>
         <ul class="contacts-list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link"
-              >info@devstudio.com</a
-            >
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="contacts-icon" width="16" height="12">
+                <use href="./images/symbol-defs (1).svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a>
           </li>
           <li class="item">
-            <a href="tel:380961111111" class="link">+38 096 111 11 11</a>
+            <a href="tel:380961111111" class="link">
+              <svg class="contacts-icon" width="10" height="16">
+                <use href="./images/symbol-defs (1).svg#icon-smartphone"></use>
+              </svg>+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -185,18 +190,54 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="container">
-      <a href="#" class="logo"><span class="logo-item">Web</span>Studio</a>
-      <address>г. Киев, пр-т Леси Украинки, 26</address>
-      <ul>
-        <li class="contacts-item">
-          <a href="mailto:info@example.com" class="contacts-link"
-            >info@example.com</a
-          >
-        </li>
-        <li class="contacts-item">
-          <a href="tel:380991111111" class="contacts-link">+38 099 111 11 11</a>
-        </li>
-      </ul>
+        <div class="footer-blocks">
+          <div class="contacts-block">
+            <a href="#" class="logo"><span class="logo-item">Web</span>Studio</a>
+            <address>г. Киев, пр-т Леси Украинки, 26</address>
+            <ul>
+              <li class="contacts-item">
+                <a href="mailto:info@example.com" class="contacts-link">info@example.com</a>
+              </li>
+              <li class="contacts-item">
+                <a href="tel:380991111111" class="contacts-link">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="join-block">
+            <p class="join-title">присоединяйтесь</p>
+            <ul class="join-list">
+              <li class="join-item">
+                <a href="#" class="join-link">
+                  <svg class="join-logo">
+                    <use href="./images/symbol-defs (1).svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-item">
+                <a href="#" class="join-link">
+                  <svg class="join-logo">
+                    <use href="./images/symbol-defs (1).svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-item">
+                <a href="#" class="join-link">
+                  <svg class="join-logo">
+                    <use href="./images/symbol-defs (1).svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-item">
+                <a href="#" class="join-link">
+                  <svg class="join-logo">
+                    <use href="./images/symbol-defs (1).svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

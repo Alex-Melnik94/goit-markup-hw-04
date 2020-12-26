@@ -7,6 +7,9 @@
   --sec-bcg-color: #f5f4fa;
   --black-color: #000000;
   --rgba-opacity-color: rgba(255, 255, 255, 0.6);
+  --logo-color: #afb1b8;
+  --hero-bcg-color: #c4c4c4;
+  --item-border-color: #eeeeee;
 }
 
 body {
@@ -109,6 +112,7 @@ img {
 
 .contacts-list {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
@@ -130,6 +134,21 @@ img {
   color: var(--accent-color);
 }
 
+.contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contacts-list .link {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-icon:hover,
+.contacts-icon:focus {
+  color: var(--accent-color);
+}
+
 /* Своство Секций */
 
 .section {
@@ -139,9 +158,30 @@ img {
 
 /* Секция Герой */
 
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/Img.jpg');
+  background-color: var(--hero-bcg-color);
+}
+
 .hero {
-  background-color: var(--primary-bcg-color);
   text-align: center;
+}
+
+.hero-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
+  height: 120px;
+  margin-bottom: 30px;
 }
 
 .hero.section {
@@ -150,8 +190,6 @@ img {
 }
 
 .hero-title {
-  margin-bottom: 30px;
-
   color: var(--white-color);
 
   font-weight: 900;
@@ -189,6 +227,17 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.icon-back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--sec-bcg-color);
+  margin-bottom: 30px;
+  border-radius: 4px;
 }
 
 .features-list {
@@ -283,6 +332,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
+  margin-bottom: 16px;
 }
 
 .members-list .members-descr {
@@ -290,11 +340,87 @@ img {
   padding-bottom: 30px;
 }
 
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-list .item-logo:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  color: var(--logo-color);
+}
+
+.social-list .link:hover,
+.social-list .link:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  border-radius: 50%;
+}
+
+.social-logo {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+/* Секция с нашими клиентами */
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--logo-color);
+  border-radius: 4px;
+
+  list-style: none;
+  color: var(--logo-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-logo {
+  fill: currentColor;
+}
+
 /* Футер */
 .footer {
   background-color: var(--primary-bcg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-blocks {
+  display: flex;
+}
+
+.contacts-block {
+  margin-right: 70px;
 }
 
 .footer .logo {
@@ -329,6 +455,53 @@ address {
 .contacts-item:not(:last-child) {
   margin-bottom: 9px;
 }
+
+.join-block {
+  padding-top: 12px;
+}
+
+.join-list {
+  display: flex;
+}
+
+.join-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
+
+.join-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  color: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--accent-color);
+}
+
+.join-logo {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+.join-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Портфолио */
 
 .filter {
   display: flex;
@@ -393,14 +566,21 @@ address {
   line-height: 1.9;
 }
 
-.works-list a {
+.works-list .link {
+  display: block;
   text-decoration: none;
 }
 
+.works-list .link:hover,
+.works-list .link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .item-border {
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  border-right: 1px solid var(--item-border-color);
+  border-bottom: 1px solid var(--item-border-color);
+  border-left: 1px solid var(--item-border-color);
   padding: 20px 24px 20px 24px;
   width: 370px;
 }
