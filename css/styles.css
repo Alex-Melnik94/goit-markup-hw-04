@@ -121,27 +121,26 @@ img {
 }
 
 .contacts-list .link {
-  display: block;
+  display: flex;
+  align-items: center;
+  /* display: block; */
   padding-top: 32px;
   padding-bottom: 32px;
 
   color: var(--primary-text-color);
   text-decoration: none;
+
+  fill: currentColor;
 }
 
 .contacts-list .link:hover,
 .contacts-list .link:focus {
   color: var(--accent-color);
+  fill: currentColor;
 }
 
 .contacts-icon {
   margin-right: 10px;
-  fill: currentColor;
-}
-
-.contacts-list .link {
-  display: flex;
-  align-items: center;
 }
 
 .contacts-icon:hover,
@@ -358,6 +357,8 @@ img {
   height: 44px;
 
   color: var(--logo-color);
+
+  fill: currentColor;
 }
 
 .social-list .link:hover,
@@ -365,10 +366,10 @@ img {
   background-color: var(--accent-color);
   color: var(--white-color);
   border-radius: 50%;
+  fill: currentColor;
 }
 
 .social-logo {
-  fill: currentColor;
   width: 20px;
   height: 20px;
 }
@@ -392,20 +393,19 @@ img {
 
   list-style: none;
   color: var(--logo-color);
+
+  fill: currentColor;
 }
 
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
+  fill: currentColor;
 }
 
 .clients-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.clients-logo {
-  fill: currentColor;
 }
 
 /* Футер */
@@ -417,6 +417,7 @@ img {
 
 .footer-blocks {
   display: flex;
+  align-items: baseline;
 }
 
 .contacts-block {
@@ -456,10 +457,6 @@ address {
   margin-bottom: 9px;
 }
 
-.join-block {
-  padding-top: 12px;
-}
-
 .join-list {
   display: flex;
 }
@@ -484,15 +481,17 @@ address {
   color: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
+  fill: currentColor;
 }
 
 .join-link:hover,
 .join-link:focus {
   background-color: var(--accent-color);
+  fill: currentColor;
 }
 
 .join-logo {
-  fill: currentColor;
   width: 20px;
   height: 20px;
 }
